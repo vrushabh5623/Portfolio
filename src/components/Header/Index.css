@@ -2,10 +2,18 @@
   display: none;
 }
 
+.header-title-anchor {
+  text-decoration: none;
+}
+
+.header-title {
+  text-decoration: none;
+}
+
 .menu-btn {
   background: transparent;
   border: none;
-  color: white;
+  color: #ffffff;
   font-size: 28px;
   cursor: pointer;
 }
@@ -15,26 +23,48 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* Fixed Header */
   .mobile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
     padding: 20px;
+    background-color: #111827; /* Change to your header color */
+    z-index: 1000;
   }
 
+  /* Mobile Menu */
   .mobile-menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    position: fixed;
+    top: 75px; /* Same as header height */
+    left: 0;
+    right: 0;
+
     padding: 20px;
-    background: #111;
+    background-color: #111827;
+    z-index: 999;
   }
 
   .mobile-menu .Home-head {
-    color: white;
+    color: #ffffff;
   }
 
   .mobile-menu .header-btn {
     width: fit-content;
+  }
+
+  /* Prevent content from hiding behind header */
+  .home-bg {
+    padding-top: 80px;
   }
 }

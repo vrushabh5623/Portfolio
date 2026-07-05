@@ -8,6 +8,7 @@
   font-size: 32px;
   font-family: 'Oleo Script';
   font-weight:regular;
+  text-decoration: none;
 }
 @media screen and (max-width:768px){
   .header-title{
@@ -24,13 +25,29 @@
   color: #4FC3F7;
   cursor: pointer;
 }
-.header-container{
+/* .header-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   margin-bottom: 30px;
+} */
+ .header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 150px;
+  box-sizing: border-box;
+
+  background-color: #1A1A1A;
+  z-index: 1000;
 }
 @media screen and (max-width:768px){
   .header-container{
@@ -99,6 +116,7 @@
   width:202px;
   height:197px;
   margin-top: 50px;
+  padding-top:50px;
 }
 
 .home-title{
@@ -106,7 +124,7 @@
   font-family:'poppins';
   font-size: 58px;
   font-weight: bold;
-  margin-top:20px
+  margin-top:20px;
 }
 @media screen and (max-width:767px){
   .home-title{

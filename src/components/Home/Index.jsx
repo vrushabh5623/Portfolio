@@ -37,8 +37,8 @@ class Home extends Component {
     const { isModalOpen, certificateImage } = this.state;
     return (
       <>
+      <Header/>
       <div className='home-bg' id='home'>
-        <Header/>
         <div className='home-content'>
           <div className='home-para-padding'>
             <img src="https://i.postimg.cc/yxKPjDfs/Untitled-design-(6).png" alt="profile" className='home-profile'/>
@@ -51,7 +51,9 @@ class Home extends Component {
               Machine Learning.
               </p>
             <div className='home-btns'>
+              <a href='#contact'>
               <button className='home-btn'>Contact Me</button>
+              </a>
             </div>
           </div>
           
@@ -214,7 +216,7 @@ class Home extends Component {
               </div>
 
               <div>
-                <h1 className='about-title' id='project'>Contact Me</h1>
+                <h1 className='about-title' id='contact'>Contact Me</h1>
                 <h3 className='home-subtitle '><span className='home-subtitle-span about-span'>Let's Build Something Great</span></h3>
                 <p className='home-description'>
                   I'm always interested in meaningful collaborations, innovative projects and conversations about software development, Generative AI and technology. Feel free to get in touch if you'd like to connect or discuss ideas.

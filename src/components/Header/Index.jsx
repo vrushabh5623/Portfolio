@@ -20,17 +20,19 @@ class Header extends Component {
       <>
         {/* Desktop Header */}
         <div className="header-container">
+          <a href="#home" className="header-title-anchor">
           <h1 className="header-title">Vrushabh</h1>
-
+          </a>
           <div className="header-links">
             <a href="#home" className="Home-head">Home</a>
             <a href="#about" className="Home-head">About</a>
+            <a href="https://github.com/vrushabh5623" className="Home-head">Github</a>
             <a href="#service" className="Home-head">Certificates</a>
             <a href="#project" className="Home-head">Projects</a>
-            <a href="#contact" className="Home-head">Contact</a>
           </div>
-
+          <a href="#contact">
           <button className="header-btn">Contact Me</button>
+          </a>
         </div>
 
         {/* Mobile Header */}
