@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import './index.css'
+import './Index.css'
 
 class Header extends Component {
   state = {
