@@ -39,20 +39,6 @@ class Home extends Component {
       <>
       <div className='home-bg' id='home'>
         <Header/>
-        {/* <div className="header-container">
-          <h1 className='header-title'>Vrushabh</h1>
-          <div className="header-links">
-            <a href='#home' className="Home-head">Home</a>
-            <a href='#about' className="Home-head">About</a>
-            <a href='https://github.com/vrushabh5623' className="Home-head">Github</a>
-            <a href='#service' className="Home-head">Certificates</a>
-            <a href='#contact' className="Home-head">Contact</a>
-            <a href='#project' className="Home-head">Projects</a>
-          </div>
-          <div>
-            <button className="header-btn">Contact Me</button> 
-          </div>
-        </div> */}
         <div className='home-content'>
           <div className='home-para-padding'>
             <img src="https://i.postimg.cc/yxKPjDfs/Untitled-design-(6).png" alt="profile" className='home-profile'/>
@@ -83,7 +69,7 @@ class Home extends Component {
               Throughout my learning journey, I have built projects using HTML, CSS, JavaScript, React.js, Node.js, Express.js, Python, SQL and Generative AI with n8n for AI automation. These projects have helped me understand both frontend and backend development while building AI-powered automation workflows, allowing me to create complete web applications and intelligent solutions from start to finish.
             </p>
             <div className='home-btns'>
-              <a href='https://drive.google.com/file/d/1nn30nwKsb3N3SGETVYRBw6wqS6fIeP7U/view?usp=sharing'>
+              <a href='https://drive.google.com/file/d/1nn30nwKsb3N3SGETVYRBw6wqS6fIeP7U/view?usp=drive_link'>
               <button className='home-btn'>Download Resume</button>
               </a>
             </div>
