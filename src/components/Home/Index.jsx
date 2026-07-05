@@ -43,7 +43,7 @@ class Home extends Component {
           <div className='home-para-padding'>
             <img src="https://i.postimg.cc/yxKPjDfs/Untitled-design-(6).png" alt="profile" className='home-profile'/>
             <h1 className='home-title'>Vrushabh Lanjewar</h1>
-            <h3 className='home-subtitle'> <span className='home-subtitle-span'>A Passionate Web Developer</span> 🌐</h3>
+            <h3 className='home-subtitle'> <span className='home-subtitle-span'>A Passionate Software Developer</span> 🤖</h3>
             <p className='home-description'>
               I'm a Computer Science student and Full-Stack Web Developer passionate
               about building modern websites and AI-powered applications. I enjoy

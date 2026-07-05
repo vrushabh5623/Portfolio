@@ -14,7 +14,7 @@ const Footer = () =>{
         <a href='https://github.com/vrushabh5623' className="footer-icon"><IoLogoGithub /></a>
         <a href='https://x.com/Vrushabhlanjewr' className="footer-icon"><IoLogoTwitter /></a>
         <a href='' className="footer-icon"><FaFacebookF /></a>
-        <a href='' className="footer-icon"><FaInstagram /></a>
+        <a href='https://www.instagram.com/vrushabh_lanjewar/' className="footer-icon"><FaInstagram /></a>
       </ul>
     </div>
   )
