@@ -1,0 +1,40 @@
+.mobile-header {
+  display: none;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #111;
+  }
+
+  .mobile-menu .Home-head {
+    color: white;
+  }
+
+  .mobile-menu .header-btn {
+    width: fit-content;
+  }
+}
