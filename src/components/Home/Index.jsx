@@ -182,7 +182,7 @@ class Home extends Component {
                 <p className='banner-title'>Netflix Movies App</p>
                 <div className='technology-used'>
                   <p className='technology-text'>Technology used</p>
-                  <a href='https://github.com/vrushabh5623/TastyKitchens'>
+                  <a href='https://github.com/vrushabh5623/movies-app'>
                   <div className='arrow-icon'><LuArrowUpRight /></div>
                   </a>
                 </div>
@@ -196,7 +196,7 @@ class Home extends Component {
                 <div className='technology-used'>
                   <p className='technology-text'>Technology used</p>
                   <div></div>
-                  <a href='https://github.com/vrushabh5623/TastyKitchens'>
+                  <a href='https://github.com/vrushabh5623/Nxt-Trendz---Specific-Product-Details'>
                   <div className='arrow-icon'><LuArrowUpRight /></div>
                   </a>
                 </div>
