@@ -177,7 +177,7 @@ class Home extends Component {
             <div className='project-card-container'>
               <div className='project-card'>
                 <div>
-                  <img src="https://i.postimg.cc/50Xj9wVb/Image-(3).png" alt="profile"  className='banner-img'/>
+                  <img src="https://i.postimg.cc/2S44hGY2/Login-page-(1).png" alt="profile"  className='banner-img'/>
                 </div>
                 <p className='banner-title'>Netflix Movies App</p>
                 <div className='technology-used'>
@@ -204,7 +204,7 @@ class Home extends Component {
 
               <div className='project-card'>
                 <div>
-                  <img src="https://i.postimg.cc/50Xj9wVb/Image-(3).png" alt="profile"  className='banner-img'/>
+                  <img src="https://i.postimg.cc/15bHp4q9/Login-Empty.png" alt="profile"  className='banner-img'/>
                 </div>
                 <p className='banner-title'>Tasty Kitchens</p>
                 <div className='technology-used'>
