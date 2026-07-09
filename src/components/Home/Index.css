@@ -256,6 +256,17 @@
 .card-icon{
   height: 50px;
   width: 50px;
+  /* background-color: #ffffff; */
+  border-radius: 5px;
+  font-size:22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.aws-card-icon{
+   height: 50px;
+  width: 50px;
   background-color: #ffffff;
   border-radius: 5px;
   font-size:22px;
@@ -264,6 +275,12 @@
   align-items: center;
   justify-content: center;
 }
+/* .certificate-logo{
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+} */
 
 .card-container{
   display: flex;
@@ -472,4 +489,10 @@
 .contact-div{
   text-align: left;
   align-self: left;
+}
+.contact-icon-class{
+  font-size: 30px;
+}
+.contact-icon-class2{
+  font-size: 25px;
 }
