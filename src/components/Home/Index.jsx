@@ -17,7 +17,32 @@ class Home extends Component {
   state = {
     isModalOpen: false,
     certificateImage: "",
+    name:"",
+    email:"",
+    message:""
   };
+
+ 
+ 
+    onSubmitBtn = async(event) =>{
+      event.preventDefault();
+
+      const {name,email,message} = this.state
+      const url = "https://vrs.app.n8n.cloud/webhook-test/46c2fbbd-01e0-423e-a03e-4dd2e07a1b45"
+      const options = {
+        method: "POST",
+        headers:{
+          "Content-Type":"application/json",
+        },
+        body:JSON.stringify({
+          name,
+          email,
+          message
+        })
+      }
+      const response = await fetch(url,options)
+      console.log(response)
+    }
 
   openModal = image => {
     this.setState({
@@ -32,6 +57,68 @@ class Home extends Component {
       certificateImage: "",
     });
   };
+
+  onChangeName = (event) =>{
+    this.setState({name:event.target.value})
+  }
+
+  onChangeMail = (event)=>{
+    this.setState({email: event.target.value})
+  }
+
+  onChangeMessage = (event)=>{
+    this.setState({message:event.target.value})
+  } 
+
+  renderName = ()=>{
+    const {name} = this.state
+    // console.log(name)
+    return(
+      <div className="input-container">
+    <label htmlFor="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      placeholder="Enter your name"
+      value={name}
+      onChange={this.onChangeName}
+    />
+  </div>
+    )
+  }
+
+  renderEmail = () =>{
+    const {email} = this.state
+    // console.log(email)
+    return(
+      <div className="input-container">
+    <label htmlFor="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      placeholder="Enter your email"
+      value={email}
+      onChange={this.onChangeMail}
+    />
+  </div>
+    )
+  }
+
+  renderMessage = () =>{
+    const {message} = this.state
+    return(
+      <div className="input-container">
+    <label htmlFor="message">Message</label>
+    <textarea
+      id="message"
+      rows="5"
+      placeholder="Enter your message"
+      value={message}
+      onChange={this.onChangeMessage}
+    ></textarea>
+  </div>
+    )
+  }
 
   render() {
     const { isModalOpen, certificateImage } = this.state;
@@ -291,6 +378,15 @@ class Home extends Component {
                 <p className='home-description'>
                   I'm always interested in meaningful collaborations, innovative projects and conversations about software development, Generative AI and technology. Feel free to get in touch if you'd like to connect or discuss ideas.
                 </p>
+                <div>
+                  <form onSubmit={this.onSubmitBtn}>
+                    <h1>Contact me</h1>
+                    {this.renderName()}
+                    {this.renderEmail()}
+                    {this.renderMessage()}
+                    <button type="submit">Send Message</button>
+                  </form>
+                </div>
                 <div className='contact-div'>
                   <p className='contact-icon'>
                     <IoMdContact className='contact-icon-class'/>
