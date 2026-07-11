@@ -95,6 +95,7 @@ class Home extends Component {
     <label htmlFor="email">Email</label>
     <input
       type="email"
+      className='email'
       id="email"
       placeholder="Enter your email"
       value={email}
@@ -108,15 +109,15 @@ class Home extends Component {
     const {message} = this.state
     return(
       <div className="input-container">
-    <label htmlFor="message">Message</label>
-    <textarea
-      id="message"
-      rows="5"
-      placeholder="Enter your message"
-      value={message}
-      onChange={this.onChangeMessage}
-    ></textarea>
-  </div>
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Enter your message"
+          value={message}
+          onChange={this.onChangeMessage}
+        ></textarea>
+      </div>
     )
   }
 
@@ -379,12 +380,11 @@ class Home extends Component {
                   I'm always interested in meaningful collaborations, innovative projects and conversations about software development, Generative AI and technology. Feel free to get in touch if you'd like to connect or discuss ideas.
                 </p>
                 <div>
-                  <form onSubmit={this.onSubmitBtn}>
-                    <h1>Contact me</h1>
+                  <form className='form' onSubmit={this.onSubmitBtn}>
                     {this.renderName()}
                     {this.renderEmail()}
                     {this.renderMessage()}
-                    <button type="submit">Send Message</button>
+                    <button className='button-form' type="submit">Send Message</button>
                   </form>
                 </div>
                 <div className='contact-div'>
