@@ -380,14 +380,14 @@ class Home extends Component {
                   I'm always interested in meaningful collaborations, innovative projects and conversations about software development, Generative AI and technology. Feel free to get in touch if you'd like to connect or discuss ideas.
                 </p>
                 <div>
-                  <form className='form' onSubmit={this.onSubmitBtn}>
+                  {/* <form className='form' onSubmit={this.onSubmitBtn}>
                     <div className='form-container2'>
                     {this.renderName()}
                     {this.renderEmail()}
                     {this.renderMessage()}
                     <button className='button-form' type="submit">Send Message</button>
                     </div>
-                  </form>
+                  </form> */}
                 </div>
                 <div className='contact-div'>
                   <p className='contact-icon'>
