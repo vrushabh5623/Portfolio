@@ -381,10 +381,12 @@ class Home extends Component {
                 </p>
                 <div>
                   <form className='form' onSubmit={this.onSubmitBtn}>
+                    <div className='form-container2'>
                     {this.renderName()}
                     {this.renderEmail()}
                     {this.renderMessage()}
                     <button className='button-form' type="submit">Send Message</button>
+                    </div>
                   </form>
                 </div>
                 <div className='contact-div'>
